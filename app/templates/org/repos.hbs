@@ -1,7 +1,6 @@
 <ul>
-  <li>{{link-to 'react' 'org.repo' 'react'}}</li>
-  <li>{{link-to 'relay' 'org.repo' 'relay'}}</li>
-  <li>{{link-to 'watchman' 'org.repo' 'watchman'}}</li>
-  <li>{{link-to 'react-native' 'org.repo' 'react-native'}}</li>
+  {{#each this.model as |repo|}}
+    <li>{{link-to repo 'org.repo' repo}}</li>
+  {{/each}}
 </ul>
 {{outlet}}
