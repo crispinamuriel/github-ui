@@ -1,6 +1,6 @@
 <h3>{{this.model}}</h3>
-<nav>
-  <div>{{link-to 'Issues' 'org.repo.issues'}}</div>
-  <div>{{link-to 'Contributors' 'org.repo.contributors'}}</div>
-</nav>
+<ul class="repo-nav">
+  <li>{{link-to 'Issues' 'org.repo.issues'}}</li>
+  <li>{{link-to 'Contributors' 'org.repo.contributors'}}</li>
+</ul>
 {{outlet}}
