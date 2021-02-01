@@ -1,5 +1,4 @@
 <ul>
-  {{log this.model "hi"}}
   {{#each this.model as |repo|}}
     <li>{{link-to repo.name 'org.repo' repo.name}}</li>
   {{/each}}
