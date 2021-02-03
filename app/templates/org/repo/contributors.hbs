@@ -1,5 +1,11 @@
-<ul>
-  <li>User</li>
-  <li>User</li>
+<ul class="list">
+  {{#each this.model as |user|}}
+    <a href={{user.url}}>
+      <li>
+        <img class="avatar" src={{user.avatar_url}} />
+        {{user.login}}
+      </li>
+    </a>
+  {{/each}}
 </ul>
 {{outlet}}

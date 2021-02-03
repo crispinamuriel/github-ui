@@ -1,5 +1,8 @@
 <ul>
-  <li># 123  - Issue description goes here</li>
-  <li># 456 - Issue description goes here</li>
+    {{#each this.model as |issue|}}
+      <li>Issue #{{issue.number}} - {{issue.title}}</li>
+        <p>{{issue.body}}</p>
+      {{!-- <li># 123  - Issue description goes here</li> --}}
+    {{/each}}
 </ul>
 {{outlet}}
