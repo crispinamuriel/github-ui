@@ -19,6 +19,7 @@ export default class OrgsRoute extends Route {
       { id: "facebook" },
       { id: "yahoo" },
       { id: "yelp" },
+      { id: "crispina" },
     ];
     return githubOrgs;
   }

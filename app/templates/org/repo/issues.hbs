@@ -1,3 +1,4 @@
+{{#if this.model.length}}
 <ul>
     {{#each this.model as |issue|}}
       <li>Issue #{{issue.number}} - {{issue.title}}</li>
@@ -5,4 +6,7 @@
       {{!-- <li># 123  - Issue description goes here</li> --}}
     {{/each}}
 </ul>
+{{else}}
+<h3>There are no current issues for this repository.</h3>
+{{/if}}
 {{outlet}}
