@@ -139,3 +139,18 @@ body {
     transform: scale(1.0);
   }
 }
+
+.issue {
+  border-style: double;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-weight: bold;
+  margin: 5px;
+  list-style-type: none;
+}
+
+.body {
+  margin: 5px;
+}

@@ -1,6 +1,15 @@
 import Component from "@ember/component";
 export default Component.extend({
-
+  isExpanded: true,
+  actions: {
+    toggle(num) {
+      this.toggleProperty("isExpanded");
+      this.sendAction("on-social-toggle", num);
+    },
+    linksToggled() {
+      console.log("TOGGLED");
+    }
+  },
 });
 // import Ember from 'ember';
 // export default Ember.Component.extend({

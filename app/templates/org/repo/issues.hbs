@@ -1,8 +1,11 @@
 {{#if this.model.length}}
 <ul>
     {{#each this.model as |issue|}}
-      <li>Issue #{{issue.number}} - {{issue.title}}</li>
+      <div class="issue">
+        <li class="title">Issue #{{issue.number}} - {{issue.title}}</li>
         <p>{{issue.body}}</p>
+      </div>
+
       {{!-- <li># 123  - Issue description goes here</li> --}}
     {{/each}}
 </ul>
