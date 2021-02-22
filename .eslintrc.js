@@ -46,6 +46,7 @@ module.exports = {
       rules: {
         // this can be removed once the following is fixed
         // https://github.com/mysticatea/eslint-plugin-node/issues/77
+        'quotes': [2, 'single', { 'avoidEscape': true }],
         'node/no-unpublished-require': 'off'
       }
     }
