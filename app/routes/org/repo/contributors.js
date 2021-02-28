@@ -12,6 +12,6 @@ export default class OrgRepoContributorsRoute extends Route {
           return json;
         }).catch((err) => console.log('Request Error: ', err));
 
-    return data
+    return data;
   }
 }
